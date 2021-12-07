@@ -31,7 +31,7 @@ function showSnackbarUpdate() {
 	newServicesWorker.postMessage({
 		action: 'skipWaiting'
 	});
-    for (let index = 0; index < 2; index++) {
+    for (let index = 0; index < 3; index++) {
         window.location.reload();
         console.log('recargando');
     }

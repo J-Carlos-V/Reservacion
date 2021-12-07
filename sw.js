@@ -14,18 +14,13 @@ self.addEventListener('install', (event) => {
         'index.html',
         'styles.css',
         'main.js',
-        'img/musicicon.jpg',
-        'img/showcase2.jpg',
-        'img/icon-192x192.png',
-        'img/icon-256x256.png',
-        'img/icon-384x384.png',
-        'img/icon-512x512.png',
+        'image/icon-192x192.png',
+        'image/icon-256x256.png',
+        'image/icon-384x384.png',
+        'image/icon-512x512.png',
     ];
 
-    const _IMMUTABLE_FILES = [
-      'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap',
-      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css',
-    ];
+    const _IMMUTABLE_FILES = [];
 
     const saveStaticCache = caches
     .open(staticCache)
