@@ -225,7 +225,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 360px) {
   h1 {
     font-size: 18px;
   }
@@ -239,7 +239,7 @@ textarea {
     width: 53px;
   }
   
-  input[type='text'], [type='email'], select, textarea {
+  input[type='text'], [type='email'],[type='number'],[type='date'],[type='time'], select, textarea {
     font-size: 0.875em;
   }
 }

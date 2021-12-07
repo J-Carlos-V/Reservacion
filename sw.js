@@ -1,7 +1,7 @@
 //create AppShell
 //const _cache = 'meals@v1-cache';
 
-let staticCache = 'staticCache-v2';
+let staticCache = 'staticCache-v1';
 let dynamicCache = 'dynamicCache-v1';
 let immutableCache = 'immutableCache-v1';
 
@@ -20,7 +20,10 @@ self.addEventListener('install', (event) => {
         'image/icon-512x512.png',
     ];
 
-    const _IMMUTABLE_FILES = [];
+    const _IMMUTABLE_FILES = [
+      'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap',
+      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css',
+    ];
 
     const saveStaticCache = caches
     .open(staticCache)

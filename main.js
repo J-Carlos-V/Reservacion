@@ -20,6 +20,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+
 function showSnackbarUpdate() {
     let x = document.getElementById("snackbar");
     x.className = "show";
@@ -31,7 +32,9 @@ function showSnackbarUpdate() {
 	newServicesWorker.postMessage({
 		action: 'skipWaiting'
 	});
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < 2; index++) {
+        window.location.reload();
+        window.location.reload();
         window.location.reload();
         console.log('recargando');
     }
